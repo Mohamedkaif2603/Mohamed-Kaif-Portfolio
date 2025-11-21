@@ -1,0 +1,106 @@
+.specialities {
+  background-color: var(--color-peach-light);
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+
+.specialities-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.specialities-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.specialities-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.specialities-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-gray);
+}
+
+.specialities-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.btn-download,
+.btn-add,
+.btn-admin-exit {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-download {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn-download:hover {
+  background-color: var(--color-orange-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-add {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn-add:hover {
+  background-color: var(--color-orange);
+  transform: translateY(-2px);
+}
+
+.btn-admin-exit {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+}
+
+.btn-admin-exit:hover {
+  background-color: #666;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .specialities {
+    padding: 2rem 0;
+  }
+
+  .specialities-container {
+    padding: 0 1rem;
+  }
+
+  .specialities-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
